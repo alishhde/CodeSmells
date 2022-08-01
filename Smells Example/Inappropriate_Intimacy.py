@@ -1,9 +1,6 @@
 # Seyedali Shohadaalhosseini - Alishhde 
 
 # Problem
-from http import client
-
-
 class Info():
     def __init__(self, name, ID, Date, Address) -> None:
         self.name = name
