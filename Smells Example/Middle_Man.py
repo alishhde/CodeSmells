@@ -6,9 +6,9 @@ class Client:
         ...
 
     def zipc():
-        return ZipCode.zipCode()
+        return Address.zipCode()
 
-class ZipCode:
+class Address:
     def __init__(self) -> None:
         ...
     
@@ -22,3 +22,22 @@ class Application:
     applicationZipCode = Client.zipc()
 
 # Solution
+class Client:
+    def __init__(self) -> None:
+        ...
+
+    def zipc():
+        return Address
+
+class Address:
+    def __init__(self) -> None:
+        ...
+    
+    def zipCode():
+        return "A8Sj093L"
+
+class Application:
+    def __init__(self) -> None:
+        ...
+        
+    applicationZipCode = Client.zipc().zipCode()
